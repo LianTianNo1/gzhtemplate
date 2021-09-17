@@ -11,9 +11,9 @@ COPY package*.json ./
 # 安装项目依赖包
 RUN npm install
 #复制项目到工作目录中
-COPY . .  
+COPY . .
 
 # 容器对外暴露的端口号
 # EXPOSE 8889
 # 容器启动时执行的命令，类似npm run start
-CMD npm start 
+CMD npm run start 
