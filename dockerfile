@@ -10,6 +10,7 @@ WORKDIR /app
 # COPY package*.json ./
 # 安装项目依赖包
 # RUN npm install
+RUN npm install -g express --registry=https://registry.npm.taobao.org
 RUN npm install --registry=https://registry.npm.taobao.org
 #复制项目到工作目录中
 COPY . /app
