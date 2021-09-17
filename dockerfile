@@ -24,5 +24,5 @@ EXPOSE 8080
 # 容器启动时执行的命令，类似npm run start
 # CMD npm run start 
 # CMD npm run forever
-# CMD ["npm", "start"]
-CMD ["npm", "forever"]
+CMD ["npm", "start"]
+# CMD ["npm", "forever"]
