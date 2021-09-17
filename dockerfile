@@ -5,7 +5,7 @@ FROM node:9.2.1-alpine
 
 # 将根目录下的文件都copy到container（运行此镜像的容器）文件系统的app文件夹下
 # cd到app文件夹下
-WORKDIR /wxgzh
+WORKDIR /gzhtemplate
 #复制package文件到工作目录
 COPY package*.json ./
 # 安装项目依赖包
