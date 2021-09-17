@@ -7,7 +7,7 @@ LABEL maintainer="1584731441@qq.com"
 # cd到app文件夹下
 WORKDIR /app
 #复制package文件到工作目录
-COPY package*.json ./
+# COPY package*.json ./
 # 安装项目依赖包
 # RUN npm install
 RUN npm install --registry=https://registry.npm.taobao.org
