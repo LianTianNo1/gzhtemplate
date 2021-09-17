@@ -12,7 +12,8 @@ WORKDIR /app
 # RUN npm install
 # RUN npm install -g express --registry=https://registry.npm.taobao.org
 # RUN npm install --registry=https://registry.npm.taobao.org
-RUN npm i --registry https://registry.npm.taobao.org && npm cache clean
+# RUN npm install --registry https://registry.npm.taobao.org && npm cache clean
+RUN npm install
 #复制项目到工作目录中
 COPY package.json /app
 COPY . /app
@@ -22,5 +23,6 @@ EXPOSE 8080
 
 # 容器启动时执行的命令，类似npm run start
 # CMD npm run start 
-CMD npm run forever
+# CMD npm run forever
 # CMD ["npm", "start"]
+CMD ["npm", "forever"]
